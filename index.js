@@ -10,6 +10,7 @@ io.on('connection',socket=>{
         users[socket.id] = name;
         socket.broadcast.emit('user-joined', name);
     });
+    //aditya
 
     // if someone sends  message , broadcast it to the other people
     socket.on('send',message =>{
